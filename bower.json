@@ -1,0 +1,21 @@
+{
+  "name": "Dark Side",
+  "version": "0.0.1",
+  "homepage": "http://zer4tul.github.io",
+  "authors": [
+    "Zer4tul Ke <zer4tul@gmail.com>"
+  ],
+  "description": "Zer4tul Ke personal blog at zer4tul.github.io",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.2.0",
+    "font-awesome": "~4.1.0"
+  }
+}
