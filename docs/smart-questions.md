@@ -1,5 +1,5 @@
 ---
-layout: layout
+layout: page
 title: 提问的智慧
 ---
 
