@@ -1,17 +1,17 @@
-# This is the default format. 
+# This is the default format.
 # For more see: http://jekyllrb.com/docs/permalinks/
-#permalink: /:categories/:year/:month/:day/:title 
+#permalink: /:categories/:year/:month/:day/:title
 permalink: /posts/:title
 
-markdown: rdiscount
-
-rdiscount:
-  extensions: [smart]
-
-#markdown: redcarpet
+# markdown: rdiscount
 #
-#redcarpet:
-#  extensions: ["no_intra_emphasis", "fenced_code_blocks", "tables", "with_toc_data"]
+# rdiscount:
+#   extensions: [smart]
+
+markdown: redcarpet
+
+redcarpet:
+ extensions: ["no_intra_emphasis", "fenced_code_blocks", "tables", "with_toc_data"]
 
 highlighter: pygments
 encoding: UTF-8
@@ -20,7 +20,7 @@ permalink: /posts/:title
 
 exclude: [ Gemfile, Gemfile.lock, gems, _assets, bower_components ]
 
-# Themes are encouraged to use these universal variables 
+# Themes are encouraged to use these universal variables
 # so be sure to set them if your theme uses them.
 #
 title : Dark Side
