@@ -10,6 +10,7 @@ Thumbs.db
 .rvmrc
 
 *~
+*.bak
 _assets/bootstrap/tests
 node_modules/
 
