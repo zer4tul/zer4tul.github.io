@@ -9,7 +9,7 @@ Eric Steven Raymond, [Thyrsus Enterprises](http://catb.org/~esr/), < [esr@thyrsu
 
 翻译：柯非, < [zer4tul@gmail.com](zer4tul@gmail.com) >
 
->这篇译文基于2014.05.20更新的[原文](#hacker-howto)修订版1.47。
+>这篇译文基于2014.05.20更新的[原文][#hacker-howto]修订版1.47。
 
 ## 目录
 - [为何会有这篇文档](#为何会有这篇文档)
@@ -43,7 +43,7 @@ Eric Steven Raymond, [Thyrsus Enterprises](http://catb.org/~esr/), < [esr@thyrsu
 
 身为[新黑客词典（The Jargon File）][Jargon File]和许多其他广为人知的同类文章的作者，我常收到热心的网络新人的电子邮件，问及（大意上是）“如何成为一名魔法师似的黑客？”。1996年的时候我注意到这个重要的问题并没有相关的FAQ或文档页面，所以我写了一份。许多黑客认为这篇文章是权威的，我觉得它应该是吧。此外，我不会寻求在这个话题上的独立著作权，如果你不喜欢在这里读到的内容，自己写一篇吧。
 
-如果你是在离线阅读本文，可以在[http://catb.org/~esr/faqs/hacker-howto.html](#hacker-howto)找到本文的最新版本。（译注：本文的最新中文版可以在[这里][Chinese]找到）
+如果你是在离线阅读本文，可以在[http://catb.org/~esr/faqs/hacker-howto.html][#hacker-howto]找到本文的最新版本。（译注：本文的最新中文版可以在[这里][Chinese]找到）
 
 注意：本文的末尾有一系列[常见问题](#常见问题)。请在向我发邮件询问关于本文的任何问题前 **再三阅读**。
 
