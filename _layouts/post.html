@@ -8,9 +8,9 @@ layout: layout
   </h1>
 
   <section class="byline">
-    {{ page.date | date: "%Y-%m-%d" }}
+    <time datetime='{{ page.date | date: "%Y-%m-%d" }}'>{{ page.date | date: "%Y-%m-%d" }}</time>
   </section>
-
+  <hr>
   {{ content }}
   <div class="pull"></div>
   {% include twitter.html %}
