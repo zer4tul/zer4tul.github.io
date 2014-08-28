@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: document
 title: "如何成为黑客"
 ---
 

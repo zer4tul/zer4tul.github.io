@@ -1,36 +1,33 @@
-# This is the default format.
-# For more see: http://jekyllrb.com/docs/permalinks/
-#permalink: /:categories/:year/:month/:day/:title
-permalink: /posts/:title
-
-# markdown: rdiscount
-#
-# rdiscount:
-#   extensions: [smart]
-
-markdown: redcarpet
+# Dependencies
+markdown:         redcarpet
 
 redcarpet:
  extensions: ["no_intra_emphasis", "fenced_code_blocks", "tables", "with_toc_data"]
 
-highlighter: pygments
-encoding: UTF-8
-timezone: Asia/Chongqing
-permalink: /posts/:title
+highlighter:         true
 
-exclude: [ Gemfile, Gemfile.lock, gems, _assets, bower_components ]
+# Permalinks
+permalink:        pretty
+#permalink: /posts/:title
 
-# Themes are encouraged to use these universal variables
-# so be sure to set them if your theme uses them.
-#
-title : Dark Side
-tagline: Site Tagline
+# Setup
+title :           Dark Side
+tagline:          ''
+description:      'Free talk'
+url:              http://zer4tul.github.io
+baseurl:          '/'
+paginate:         5
+
 author :
   name : Zeratul Ke
   email : zer4tul@gmail.com
   github : zer4tul
   twitter : zer4tul
 
-description: "Througths, flamewars, utilities, tutorials, codes, projects and other things by Carlos Alexandro Becker."
+# Custom vars
+version:          1.0.0
+
+github:
+  repo:           https://github.com/zer4tul
 production_url : http://zer4tul.github.io
 disqus_shortname: the-dark-side
