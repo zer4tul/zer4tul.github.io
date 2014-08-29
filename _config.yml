@@ -7,8 +7,8 @@ redcarpet:
 highlighter:      pygments
 
 # Permalinks
-permalink:        pretty
-#permalink: /posts/:title
+#permalink:        pretty
+permalink: /posts/:title
 
 # Setup
 title :           Dark Side
