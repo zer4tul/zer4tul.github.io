@@ -527,6 +527,57 @@ a.pagination-item:hover {
   color: #8f5536;
 }
 
+/* Dark Side */
+/*.theme-base-ds .container a,
+.theme-base-ds .sidebar-toggle,
+.theme-base-ds .related-posts li a:hover {
+  color: #9ea1a3;
+}*/
+
+.theme-base-ds kbd {
+  font-size:90%;
+  color:#fff;
+  background-color:#333;
+  border-radius:3px;
+  box-shadow:inset 0 -1px 0 rgba(0,0,0,0.25);
+  padding:2px 4px;
+  }
+
+.theme-base-ds kbd kbd {
+  font-size:100%;
+  box-shadow:none;
+  padding:0;
+  }
+
+.theme-base-ds pre code {
+    display: block;
+    background: #1d1f21;
+    color: #c5c8c6;
+    font-family: "Source Code Pro", Menlo, Monaco, Consolas, monospace;
+    line-height: 1.5;
+    border: 1px solid #ccc;
+    padding: 10px;
+  }
+.theme-base-ds pre {
+   background-color:#f5f5f5;
+   display:block;
+   overflow:auto;
+ }
+.theme-base-ds code,kbd,pre,samp {
+  font-family:"Source Code Pro",Menlo,Monaco,Consolas,"Courier New",monospace;
+  }
+
+.theme-base-ds blockquote footer,blockquote small,blockquote .small {
+  display:block;
+  background: #f5f5f5
+  font-size:80%;
+  line-height:1.428571429;
+  color:#7b7c7d;
+  }
+
+.theme-base-ds blockquote footer:before,blockquote small:before,blockquote .small:before {
+  content:'\2014 \00A0';
+  }
 
 /*
  * Overlay sidebar

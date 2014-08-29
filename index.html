@@ -15,6 +15,10 @@ title: Home
     <span class="post-date">{{ post.date | date_to_string }}</span>
 
     {{ post.excerpt }}
+    <div>
+      <a href="{{ post.url }}">阅读全文</a>
+    </div>
+      <hr>
   </div>
   {% endfor %}
 </div>
@@ -35,4 +39,3 @@ title: Home
     <span class="pagination-item newer">Newer</span>
   {% endif %}
 </div>
-
