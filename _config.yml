@@ -18,6 +18,8 @@ url:              http://zer4tul.github.io
 baseurl:          '/'
 paginate:         5
 
+excerpt_separator:  '<!-- more -->'
+
 author :
   name : Zeratul Ke
   email : zer4tul@gmail.com
