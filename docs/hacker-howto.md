@@ -9,7 +9,7 @@ Eric Steven Raymond, [Thyrsus Enterprises](http://catb.org/~esr/), < [esr@thyrsu
 
 翻译：柯非, < [zer4tul@gmail.com](zer4tul@gmail.com) >
 
->这篇译文基于2014.05.20更新的[原文][hacker-howto]修订版1.47。
+>这篇译文基于2014.07.19更新的[原文][hacker-howto]修订版1.48。
 
 ## 目录
 - [为何会有这篇文档](#为何会有这篇文档)
@@ -523,8 +523,6 @@ Q: <a name="started2">我想做贡献。你能帮我挑选一个问题来处理�
 
 A: 不行。因为我不知道你擅长什么，也不知道你对什么感兴趣。你需要做到自我驱动，否则无法进步。这也是为什么让别人帮你挑选反向几乎都不会有用。
 
-试试看几天[Freshmeat][#Freshmeat]上的项目公告。当你看到一个能让你想“很酷！我想试试这个”，那就加入吧。
-
 Q: <a name="MS_hater">我得因此憎恨和反对Microsoft吗？</a>
 
 A: 不，你不必如此。不是因为Microsoft不令人讨厌，而是因为黑客文化早在Microsoft出现之前就存在了，且将在Microsoft成为历史后依然存在。你耗费在憎恨Microsoft的任何力气不如花在热爱你的技术上。写好的代码——那会相当有效地打击Microsoft又不会让你得到恶报。
@@ -585,5 +583,4 @@ A: 如果你的机器上还没有安装Unix，我在本文的其他地方已经�
 [Linux Reading List HOWTO]: http://en.tldp.org/HOWTO/Reading-List-HOWTO/index.html
 [HTML: The Definitive Guide]: http://www.oreilly.com/catalog/html5/
 [hardware howto]: http://en.tldp.org/HOWTO/Hardware-HOWTO/index.html
-[Freshmeat]: http://freshmeat.net/
 [Open Source]: http://www.opensource.org/
