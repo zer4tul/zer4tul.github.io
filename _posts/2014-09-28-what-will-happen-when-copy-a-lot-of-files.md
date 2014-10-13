@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "cp 大量文件时可能耗光内存"
+tags: ["linux", "tools", "operation"]
 ---
 
 8月11日的时候有用户在 GNU coreutils 邮件组发[邮件][origin_mail]反馈，自己在拷贝大量文件（4.32亿，39 TB）的时候发现所有空闲内存被用光。

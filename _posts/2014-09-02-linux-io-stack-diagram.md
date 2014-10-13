@@ -1,6 +1,7 @@
 ---
 title: Linux I/O Stack Diagram
 layout: post
+tags: ["linux", "operation"]
 ---
 
 [Brendan Gregg](https://twitter.com/brendangregg) 在他的 [Linux Performance Tools][linux_performance_tools] 中给出了分析 Linux 性能问题的工具集图并在上述链接中维持更新。

@@ -1,6 +1,7 @@
 ---
 title: "关于“Argument list too long”"
 layout: post
+tags: ["linux", "tools", "operation"]
 ---
 
 今天又看见这个信息了，虽然已经知道是glibc的限制，但还是好奇了一把，找了找资料。最后终于发现是ARG_MAX。

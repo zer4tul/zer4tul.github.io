@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "dmesg error code 的含义"
-category: posts
+tags: ["linux", "tools", "operation"]
 ---
 
 dmesg 里报出来的最后一个 error 的意思是：
