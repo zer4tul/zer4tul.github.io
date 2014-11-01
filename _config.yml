@@ -1,5 +1,6 @@
 # Dependencies
-markdown:         redcarpet
+#markdown:         redcarpet
+markdown:         kramdown
 
 redcarpet:
  extensions: ["no_intra_emphasis", "fenced_code_blocks", "tables", "with_toc_data"]
@@ -14,7 +15,7 @@ permalink: /posts/:title
 title :           Dark Side
 tagline:          ''
 description:      'Free talk'
-url:              http://zer4tul.github.io
+url:              http://idarkside.org
 baseurl:          '/'
 paginate:         5
 
@@ -31,5 +32,5 @@ version:          1.0.0
 
 github:
   repo:           https://github.com/zer4tul
-production_url : http://zer4tul.github.io
+production_url : http://idarkside.org
 disqus_shortname: the-dark-side
