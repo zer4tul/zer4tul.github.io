@@ -73,26 +73,18 @@ Notes
 -----
 
 - Assuming ~1GB/sec SSD
-- context switch 与系统当前负载情况强相关，无法准确测定。以上数值请做参考。
+- Context switch 与系统当前负载情况强相关，无法准确测定。以上数值请做参考。
 
-Credit
-------
+Credits
+-------
 
-By [Jeff Dean](http://research.google.com/people/jeff/)
-
-Originally by [Peter Norvig](http://norvig.com/21-days.html#answers)
-
-Contributions
--------------
-
-[Some updates from https://gist.github.com/2843375](https://gist.github.com/2843375)
-
-[Great 'humanized' comparison version](https://gist.github.com/2843375)
-
-[Nice animated presentation of the data](http://prezi.com/pdkvgys-r0y6/latency-numbers-for-programmers-web-development/)
-
-[Interactive version](http://www.eecs.berkeley.edu/~rcs/research/interactive_latency.html)
-
-[Ping times between cities](https://wondernetwork.com/pings)
-
-[Performance Analysis Guide for Intel® Core™ i7 Processor and Intel® Xeon™ 5500 processors](https://software.intel.com/sites/products/collateral/hpc/vtune/performance_analysis_guide.pdf)
+- [Latency Numbers](#Latency Numbers)
+  - By [Jeff Dean](http://research.google.com/people/jeff/)
+  - Originally by [Peter Norvig](http://norvig.com/21-days.html#answers)
+- Other versions of [Latency Numbers](#Latency Numbers)
+  - [Some updates from https://gist.github.com/2843375](https://gist.github.com/2843375)
+  - [Great 'humanized' comparison version](https://gist.github.com/2843375)
+  - [Nice animated presentation of the data](http://prezi.com/pdkvgys-r0y6/latency-numbers-for-programmers-web-development/)
+  - [Interactive version](http://www.eecs.berkeley.edu/~rcs/research/interactive_latency.html)
+- [Ping times between cities](https://wondernetwork.com/pings)
+- [Performance Analysis Guide for Intel® Core™ i7 Processor and Intel® Xeon™ 5500 processors](https://software.intel.com/sites/products/collateral/hpc/vtune/performance_analysis_guide.pdf)

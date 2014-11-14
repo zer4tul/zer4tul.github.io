@@ -5,9 +5,9 @@ title: "如何成为黑客"
 
 How To Become A Hacker
 
-Eric Steven Raymond, [Thyrsus Enterprises](http://catb.org/~esr/), < [esr@thyrsus.com](esr@thyrsus.com) >
+Eric Steven Raymond, [Thyrsus Enterprises](http://catb.org/~esr/), < <esr@thyrsus.com> >
 
-翻译：柯非, < [zer4tul@gmail.com](zer4tul@gmail.com) >
+翻译：柯非, < <zer4tul@gmail.com> >
 
 >这篇译文基于2014.07.19更新的[原文][hacker-howto]修订版1.48。
 

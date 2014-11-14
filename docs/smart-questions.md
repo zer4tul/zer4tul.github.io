@@ -5,10 +5,10 @@ title: 提问的智慧
 
 How To Ask Questions The Smart Way
 
-Eric Steven Raymond, [Thyrsus Enterprises](http://www.catb.org/~esr/), < [esr@thyrsus.com](esr@thyrsus.com) ><br>
+Eric Steven Raymond, [Thyrsus Enterprises](http://www.catb.org/~esr/), <  <esr@thyrsus.com> ><br>
 Rick Moen, < [respond-auto@linuxmafia.com](respond-auto@linuxmafia.com) >
 
-翻译：柯非, < [zer4tul@gmail.com](zer4tul@gmail.com) >
+翻译：柯非, < <zer4tul@gmail.com> >
 
 >这篇译文基于2014.05.21更新的[原文](http://www.catb.org/~esr/faqs/smart-questions.html)修订版3.10。
 
