@@ -12,8 +12,8 @@ permalink: /posts/:title
 
 # Setup
 title :           Dark Side
-tagline:          ''
-description:      'Free talk'
+tagline:          'cat /dev/brain'
+description:      'Dark Side'
 url:              http://idarkside.org
 baseurl:          '/'
 paginate:         5
