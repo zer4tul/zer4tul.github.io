@@ -9,4 +9,4 @@ Google’s Gmail SMTP/IMAP service was blocked in China since last friday. Let's
 
 There are some (not so good) alternatives in China, like [163](http://mail.163.com/) , [QQ Mail](https://mail.qq.com) . If one want to still using Gmail, the only is using it through VPNs or proxies.
 
-Here comes the question: who will be the next to be blocked?
+Here comes the question: who will be the next one?
