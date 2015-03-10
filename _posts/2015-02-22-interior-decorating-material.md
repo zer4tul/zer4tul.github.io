@@ -1,6 +1,7 @@
 ---
 title: "室内装修经验——材料"
 layout: post
+tags: ["interior decorating"]
 ---
 
 # 挑选主材
