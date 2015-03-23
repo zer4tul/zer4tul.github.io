@@ -12,7 +12,7 @@ tags: ["encoding"]
 * GB2312 <-> GBK
 * UTF-8 -> BIG5
 
-# 转换失败的原因
+## 转换失败的原因
 
 通常情况下，字符集转换失败是由于文本使用的字符在目标字符集中没有对应字符的编码造成的。
 
@@ -33,7 +33,7 @@ tags: ["encoding"]
 
 <!-- more -->
 
-# 形似中点的符号
+## 形似中点的符号
 
 在 UNICODE 中有多个外形类似的符号，列表如下：
 
@@ -62,7 +62,7 @@ tags: ["encoding"]
 * 以上字符在 GB18030、UTF-8、UTF-16 中都有对应的编码
 * 在 GB2312、GBK、BIG5 中，除前表列出的以外，其余均没有对应的编码。
 
-# Reference
+## Reference
 
 1. [Fileformat.info: Unicode Character Search](http://www.fileformat.info/info/unicode/char/search.htm)
 2. [Wikipedia: Interpunct](http://en.wikipedia.org/wiki/Interpunct)（[中文版](http://zh.wikipedia.org/wiki/%E9%97%B4%E9%9A%94%E5%8F%B7)）

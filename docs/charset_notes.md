@@ -5,7 +5,9 @@ layout: document
 
 字符集和字符集编码其实并不难懂，但是很多人在这上面被坑（尤其是使用中文或者其他非 ASCII 语言的人）。本文就是想要简单的讲述字符编码相关的内容，但是并不会涉及到特别深入的原理。
 
-# 字符集、字符编码
+> 字符集设定正确，没有对应的字体所造成的看到“������”或“□□□□”的情况不在本文讨论的范围内。
+
+## 字符集、字符编码
 
 通常容易让人犯晕的是：字符集、字符编码这两个概念。例如 [HZ][HZ] / [EUC-CN](https://en.wikipedia.org/wiki/Extended_Unix_Code#EUC-CN) 和 [GB2312][GB2312]，[UTF-8][UTF-8]、[UTF16][UTF-16] / [UCS-2][UTF-16] 和 [Unicode][Unicode] / [ISO 10646][UCS]。为了避免这个问题，首先将字符集、字符编码区分清楚。
 
@@ -15,7 +17,7 @@ layout: document
 > 以计算机为基础的信息处理系统利用元件（硬件）不同状态的组合来存储和处理信息，元件不同状态的组合能代表数字系统的数字，因此字符编码就是将符号转换为计算机可以接受的数字系统的数，称为数字代码。
 
 
-通常我们以“字符集”指代“字符集+字符编码方式”，因此会有 “UTF-8 字符集”这种说法。这个叫法在 [Unicode Transformation Format（UTF）][UTF]（中文译名：Unicode 转换格式）出现之前通常不会造成困扰（一个例外是 [HZ](#HZ)），各种字符集都包含与之对应的编码方式。
+通常我们以“字符集”指代“字符集及其字符编码方式”，因此会有 “UTF-8 字符集”这种说法。这个叫法在 [Unicode Transformation Format（UTF）][UTF]（中文译名：Unicode 转换格式）出现之前通常不会造成困扰（一个例外是 [HZ](#HZ)），各种字符集都包含与之对应的编码方式。
 
 - MS-DOS、Windows，IBM OS/2 的 Code Page（ CP ）实际上也是字符集+字符编码方式。例如 CP936 可以近似认为是 [GBK][GBK] 的别名。
 
@@ -25,13 +27,13 @@ layout: document
 
 <!-- more -->
 
-# 常见的字符集及编码
+### 常见的字符集及编码
 
 以下只列举中文环境下常见的字符集和编码方式。
 
-当前中国大陆常用的字符集为 [GBK][GBK]（ CP936 ），[Unicode][Unicode]，[GB18030][GB18030]。[GB2312][GB2312] 有少量老系统使用。有少量 UNIX 类操作系统控制台默认使用 [ISO8859-1][ISO8859]（ LATIN-1 ）字符集。
+当前中国大陆常用的字符集为 [GBK][GBK]（ CP936 ），[Unicode][Unicode]，[GB18030][GB18030]。[GB2312][GB2312] 有少量老系统使用。有少量 UNIX 类操作系统控制台默认使用 [ISO 8859-1][ISO 8859]（ LATIN-1 ）字符集。
 
-## ASCII 字符集和编码
+#### ASCII 字符集和编码
 
 [American Standard Code for Information Interchange][ASCII]（中文译名：美国信息交换标准代码）是基于拉丁字母的一套电脑编码系统。它主要用于显示现代英语，其扩展版本EASCII可以部分支持其他西欧语言。当前通用的绝大部分字符集及其编码方式均与 [ASCII][ASCII] 保持兼容。
 
@@ -168,35 +170,35 @@ layout: document
 |  7E |   ~    |      ~       |                |          | ~                                         |                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
 |  7F |  DEL   |      ␡       |       ^?       |          | 删除（Delete）                            | 这个字符并不在 [C0 控制代码][C0]区间里。最初被用于标记打孔带上被删除的字符。大多数打孔带都是7位，所有字符都可以被修改为 0x7F 对应的二进制代码 1111111 （7个孔位全部穿孔），以此来标识这个字符被删除。在 VT100 兼容终端上，这个字符可以通过标记为 ⌫ 的按键产生，这个键在现代计算机中被称作 Backspace。**这个字符与 PC 键盘上的 Delete 按键没有任何关系。**"                                                                                                |
 
-# ISO8859
+### ISO 8859
 
-[ISO8859][ISO8859] 是[国际标准化组织][ISO]及[国际电工委员会][IEC]联合制定的一系列8位字符集的标准，现时定义了15个字符集，用于表示其他拉丁字母、西里尔字母、希腊语、泰语、阿拉伯语、希伯来语。兼容 [ASCII][ASCII]，增补的 96 个字符根据不同的分组，对应不同的字符集合。
+[ISO 8859][ISO 8859] 是[国际标准化组织][ISO]及[国际电工委员会][IEC]联合制定的一系列8位字符集的标准，现时定义了15个字符集，用于表示其他拉丁字母、西里尔字母、希腊语、泰语、阿拉伯语、希伯来语。兼容 [ASCII][ASCII]，增补的 96 个字符根据不同的分组，对应不同的字符集合。
 
-部分 Unix 类系统默认使用 [ISO8859-1][ISO8859]（Latin-1）作为默认字符集。
+部分 Unix 类系统默认使用 [ISO 8859-1][ISO 8859]（Latin-1）作为默认字符集。
 
-[ISO8859][ISO8859] 的15个分组（Part）如下：
+[ISO 8859][ISO 8859] 的15个分组（Part）如下：
 
 |    分组    |        别名         | 说明                                                                       |
 |:----------:|:-------------------:|:---------------------------------------------------------------------------|
-| ISO8859-1  |       Latin-1       | 西欧语言                                                                   |
-| ISO8859-2  |       Latin-2       | 中欧语言                                                                   |
-| ISO8859-3  |       Latin-3       | 南欧语言，世界语也可以用此字符集显示                                       |
-| ISO8859-4  |       Latin-4       | 北欧语言                                                                   |
-| ISO8859-5  |      Cyrillic       | 斯拉夫语言                                                                 |
-| ISO8859-6  |       Arabic        | 阿拉伯语                                                                   |
-| ISO8859-7  |        Greek        | 希腊语                                                                     |
-| ISO8859-8  |       Hebrew        | 希伯来语                                                                   |
-| ISO8859-9  |   Latin5、Turkish   | 它把Latin-1的冰岛语字母换走，加入土耳其语字母                              |
-| ISO8859-10 |   Latin6、Nordic    | 北日耳曼语支，用来代替Latin-4                                              |
-| ISO8859-11 |        Thai         | 泰语，从泰国的 TIS620 标准字集演化而来                                     |
-| ISO8859-13 | Latin-7、Baltic Rim | 波罗的语族                                                                 |
-| ISO8859-14 |   Latin-8、Celtic   | 凯尔特语族                                                                 |
-| ISO8859-15 |       Latin-9       | 西欧语言，加入Latin-1欠缺的芬兰语字母和大写法语重音字母，以及欧元（€）符号 |
-| ISO8859-16 |      Latin-10       | 东南欧语言。主要供罗马尼亚语使用，并加入欧元符号。                         |
+| ISO 8859-1  |       Latin-1       | 西欧语言                                                                   |
+| ISO 8859-2  |       Latin-2       | 中欧语言                                                                   |
+| ISO 8859-3  |       Latin-3       | 南欧语言，世界语也可以用此字符集显示                                       |
+| ISO 8859-4  |       Latin-4       | 北欧语言                                                                   |
+| ISO 8859-5  |      Cyrillic       | 斯拉夫语言                                                                 |
+| ISO 8859-6  |       Arabic        | 阿拉伯语                                                                   |
+| ISO 8859-7  |        Greek        | 希腊语                                                                     |
+| ISO 8859-8  |       Hebrew        | 希伯来语                                                                   |
+| ISO 8859-9  |   Latin5、Turkish   | 它把Latin-1的冰岛语字母换走，加入土耳其语字母                              |
+| ISO 8859-10 |   Latin6、Nordic    | 北日耳曼语支，用来代替Latin-4                                              |
+| ISO 8859-11 |        Thai         | 泰语，从泰国的 TIS620 标准字集演化而来                                     |
+| ISO 8859-13 | Latin-7、Baltic Rim | 波罗的语族                                                                 |
+| ISO 8859-14 |   Latin-8、Celtic   | 凯尔特语族                                                                 |
+| ISO 8859-15 |       Latin-9       | 西欧语言，加入Latin-1欠缺的芬兰语字母和大写法语重音字母，以及欧元（€）符号 |
+| ISO 8859-16 |      Latin-10       | 东南欧语言。主要供罗马尼亚语使用，并加入欧元符号。                         |
 
-由于 [ISO8859][ISO8859] 采用8位编码，在通过 ssh 或者 telnet 等方式登录使用 ISO8859-1 字符集的 Unix 系统时，终端可以基本正确的显示其中的双字节（GBK、BIG5 等）或多字节（GB18030、UTF-8 等）编码的中文字符。但是在处理的时候系统将仍然按照单个字节进行处理，因此 GBK 编码的“中（0xD6 0xD0）”字将被当作2个字符处理，这就是“半个汉字”问题的由来。
+由于 [ISO 8859][ISO 8859] 采用8位编码，在通过 ssh 或者 telnet 等方式登录使用 ISO 8859-1 字符集的 Unix 系统时，终端可以基本正确的显示其中的双字节（GBK、BIG5 等）或多字节（GB18030、UTF-8 等）编码的中文字符。但是在处理的时候系统将仍然按照单个字节进行处理，因此 GBK 编码的“中（0xD6 0xD0）”字将被当作2个字符处理，这就是“半个汉字”问题的由来。
 
-# GB2312、GBK、GB13000、GB18030
+### GB2312、GBK、GB13000、GB18030
 
 - [GB2312][GB2312] 规定：一个小于127的字符的意义与原来相同，但两个大于127的字符连在一起时，就表示一个汉字，前面的一个字节（他称之为高字节）从0xA1用到 0xF7，后面一个字节（低字节）从0xA1到0xFE。GB2312 共收录 6763 个汉字，覆盖 99% 以上的使用场景。
 
@@ -211,7 +213,7 @@ layout: document
 
 ![GB18030 编码结构图](/images/GB18030.jpg)
 
-# Big5
+### Big5
 
 [Big5][Big5] 也被称作大五码，是繁体中文社区（包括台湾正体中文）最常用的汉字字符集，这是一个 **业界标准** 而非国家标准的双字节字符集。
 
@@ -236,7 +238,7 @@ layout: document
 | 0xC940 ~ 0xF9D5 | 次常用汉字，亦是先按笔划再按部首排序。                                                                                                                                                                                   |
 | 0xF9D6 ~ 0xFEFE | 保留给用户自定义字符（造字区）。在[倚天中文系统](https://zh.wikipedia.org/wiki/%E5%80%9A%E5%A4%A9%E4%B8%AD%E6%96%87%E7%B3%BB%E7%B5%B1)中，这个空间还包括'碁'、'銹'、'恒'、'裏'、'墻'、'粧'、'嫺' 7个汉字和34个其他符号。 |
 
-# HZ
+### HZ
 
 [HZ][HZ] 严格来说是一个使用 [GB2312][GB2312] 字符集的编码方式，1989年由斯坦福大学的李楓峰设计，曾被广泛应用于中文 USENET 和邮件编码。
 
@@ -246,9 +248,9 @@ layout: document
 ~{VPND~}
 ```
 
-# Unicode、UCS 和 UTF
+### Unicode、UCS 和 UTF
 
-## Unicode 和 UCS
+#### Unicode 和 UCS
 **[Unicode][Unicode]**（中文有多个译名：万国码、国际码、统一码、单一码）是一种字符编码标准（字符集），由[统一码联盟](http://www.unicode.org/)负责拟定。
 
 **[Universal Character Set（UCS）][UCS]**（中文译名：通用字符集、通用多八位编码字符集、广用多八比特编码字元集）是 [ISO 10646][UCS] 标准定义的字符编码标准（字符集）。[UCS][UCS] 分为3个实现级别：
@@ -261,13 +263,13 @@ layout: document
 
 在表示一个Unicode的字符时，通常会用“U+”然后紧接着一组十六进制的数字来表示这一个字符。在基本多文种平面（英文：Basic Multilingual Plane，简写BMP。又称为“0号平面”、plane 0）里的所有字元，要用四位十六进制数（例如 U+4AE0，共支持六万多个字符）；在0号平面以外的字符则需要使用五位或六位十六进制数。
 
-当前的 [Unicode][Unicode] 版本为7.0，2014年6月16日发布，收录了超过10万个字符。[Unicode][Unicode] 将6字节长度的编码空间划分为17个平面（Plane），每个平面有65536个代码点，目前只使用了少数平面。其中0号平面（U+0000 ~ U+FFFF）被称作基本多文种平面（Basic Multilingual Plane，BMP），用于存放现有的主要文字、符号，编码长度为4字节，其中前256个字符（U+0000 ~ U+00FF）与 ISO8859-1 兼容。
+当前的 [Unicode][Unicode] 版本为7.0，2014年6月16日发布，收录了超过10万个字符。[Unicode][Unicode] 将6字节长度的编码空间划分为17个平面（Plane），每个平面有65536个代码点，目前只使用了少数平面。其中0号平面（U+0000 ~ U+FFFF）被称作基本多文种平面（Basic Multilingual Plane，BMP），用于存放现有的主要文字、符号，编码长度为4字节，其中前256个字符（U+0000 ~ U+00FF）与 ISO 8859-1 兼容。
 
 [Unicode][Unicode] 基本多文种平面的示意如下图。每个写着数字的格子代表256个码点。关于 [Unicode][Unicode] 字符平面映射的更多内容，参考[这里](http://zh.wikipedia.org/wiki/Unicode%E5%AD%97%E7%AC%A6%E5%B9%B3%E9%9D%A2%E6%98%A0%E5%B0%84)。
 
 ![Roadmap_to_Unicode_BMP](/images/Roadmap_to_Unicode_BMP-zh.svg)
 
-## Unicode 转换格式
+#### Unicode 转换格式
 
 [Unicode][Unicode] 和 [ISO 10646][UCS] 定义了字符集以及字符到数字映射关系的码表，并没有定义这些数字如何转换成字节流。
 
@@ -275,7 +277,7 @@ layout: document
 
 **[Unicode Transformation Format（UTF）][UTF]**（中文译名：Unicode 转换格式）和 **Universal Character Set (UCS) encodings**（仍然简称 UCS）。就是定义数字到字节流转换关系的标准。其中 [UTF-8][UTF-8] 在当前互联网上使用范围最广。其余还有 [UTF-16][UTF-16]、[UCS2][UTF-16]、和 UTF-32（UCS-4）。
 
-### UTF-8
+##### UTF-8
 
 [UTF-8][UTF-8]（8-bit Unicode Transformation Format）是一种针对 [Unicode][Unicode] 的可变长度字符编码，也是一种前缀码。它可以用来表示Unicode标准中的任何字符，且其编码中的第一个字节仍与 [ASCII][ASCII] 兼容这使得原来处理 [ASCII][ASCII] 字符的软件无须或只须做少部份修改，即可继续使用。因此，它逐渐成为电子邮件、网页及其他存储或传送文字的应用中，优先采用的编码。[互联网工程工作小组](http://zh.wikipedia.org/wiki/%E7%B6%B2%E9%9A%9B%E7%B6%B2%E8%B7%AF%E5%B7%A5%E7%A8%8B%E5%B7%A5%E4%BD%9C%E5%B0%8F%E7%B5%84)（IETF）要求所有互联网协议都必须支持UTF-8编码。
 
@@ -305,7 +307,7 @@ UTF-8使用一至四个字节进行编码，规则如下：
 
 因此，对UTF-8编码中的任意字节，根据第一位，可判断是否为ASCII字符；根据前二位，可判断该字节是否为一个字符编码的第一个字节；根据前四位（如果前两位均为1），可确定该字节为字符编码的第一个字节，并且可判断对应的字符由几个字节表示；根据前五位（如果前四位为1），可判断编码是否有错误或数据传输过程中是否有错误。
 
-# 其他
+### 其他
 
 针对其他东亚文字的常见字符集有：
 
@@ -318,11 +320,11 @@ UTF-8使用一至四个字节进行编码，规则如下：
 
 
 
-# 识别字符集
+## 识别字符集
 
 如前所述，字符集定义了特定字符到字节流的转换方式。在显示文本的时候我们需要知道对应的字符集，才能正确解码并显示文本。
 
-## HTML / XHTML / XML
+### HTML / XHTML / XML
 
 通常在 HTMl（包括 XHTML）和 XML 页面中，会包含字符集声明。
 
@@ -338,7 +340,7 @@ XML
 <?xml version="1.0" encoding="UTF-8"?>
 ```
 
-## 关系型数据库（RDBMS）
+### 关系型数据库（RDBMS）
 
 关系型数据库以 Database、Table、Column 的结构来组织数据，存储文本所使用的字符集通常存储在表结构中。可以通过查看对应的文档找到查看数据库所使用字符集的方式。常见的数据库系统以及对应的文档地址如下：
 
@@ -361,7 +363,7 @@ XML
 CJK Ideograph Extension B、C、D(U+20000 to U+200FF U+2A700 to U+2A7FF U+2B740 to U+2B83F)
 CJK Conpatibility Ideograph Supplenment (U+2F800 to U+2F8FF)
 
-# REFERENCE
+## REFERENCE
 
 * [GB18030 Summary](http://examples.oreilly.com/cjkvinfo/pdf/GB18030_Summary.pdf)
 * UTF-8 RFC标准文档：[RFC 3629](http://tools.ietf.org/html/rfc3629)
@@ -372,7 +374,7 @@ CJK Conpatibility Ideograph Supplenment (U+2F800 to U+2F8FF)
 [C0]: https://en.wikipedia.org/wiki/C0_and_C1_control_codes
 [区位码]: http://zh.wikipedia.org/wiki/ISO/IEC_2022
 [ASCII]: http://zh.wikipedia.org/wiki/ASCII
-[ISO8859]: http://zh.wikipedia.org/wiki/ISO/IEC_8859
+[ISO 8859]: http://zh.wikipedia.org/wiki/ISO/IEC_8859
 [ISO]: http://zh.wikipedia.org/wiki/%E5%9C%8B%E9%9A%9B%E6%A8%99%E6%BA%96%E5%8C%96%E7%B5%84%E7%B9%94
 [IEC]: http://zh.wikipedia.org/wiki/%E5%9B%BD%E9%99%85%E7%94%B5%E5%B7%A5%E5%A7%94%E5%91%98%E4%BC%9A
 [HZ]: http://en.wikipedia.org/wiki/HZ_(character_encoding)
