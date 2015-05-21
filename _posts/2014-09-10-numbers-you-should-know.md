@@ -1,7 +1,7 @@
 ---
 layout: post
 title : "Numbers You Should Know"
----------------------------------
+---
 
 Latency Numbers
 ---------------

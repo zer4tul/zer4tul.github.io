@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Mozilla 宣布淘汰 HTTP"
+title: "Mozilla 宣布计划逐步淘汰 HTTP"
 ---
 
 [Mozilla][mozilla] 在4月30日通过[官方博客](https://blog.mozilla.org/security/2015/04/30/deprecating-non-secure-http/)发布消息，计划淘汰 HTTP。
