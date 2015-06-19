@@ -9,7 +9,7 @@ Eric Steven Raymond, [Thyrsus Enterprises](http://catb.org/~esr/), < <esr@thyrsu
 
 翻译：柯非, < <zer4tul@gmail.com> >
 
->这篇译文基于2014.07.19更新的[原文][hacker-howto]修订版1.48。
+>这篇译文基于2014.07.19更新的[原文][hacker-howto]修订版1.48。如果对译文有任何意见或者建议，请[给我发邮件](mailto:zer4tul@gmail.com)。
 
 ## 目录
 - [为何会有这篇文档](#为何会有这篇文档)
@@ -202,7 +202,7 @@ Unix是互联网上的操作系统。虽然你不懂Unix仍然可以学会使用
 
 在本文最初的10年间，我认为从一个初学者的角度来说，所有Linux发行版都差不多。不过在2006~2007年间，一个事实上最好的选择出现了：[Ubuntu][Ubuntu]。其他发行版各有所长，而Ubuntu对初学者最友好。注意，相比Ubuntu的默认那个丑陋的几乎不可用的“Unity”桌面，Xubuntu和Kubuntu更好用一点。
 
-你可以在[www.bsd.org](www.bsd.org)找到BSD相关的帮助和资源。
+你可以在[www.bsd.org](http://www.bsd.org)找到BSD相关的帮助和资源。
 
 一个试水的好办法是试试被Linux爱好者称为“Live CD”的东西，那是一个完全在光盘上运行，而不修改你硬盘的发行版。它运行起来比较慢，因为光盘很慢，但是这是一个在做出任何不可挽救的改变前看看可行性的办法。
 
