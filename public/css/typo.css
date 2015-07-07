@@ -128,7 +128,7 @@ sub {
 /* 让链接在 hover 状态下显示下划线 */
 a {
   /*color: #1abc9c;*/
-  color: #00a3af;
+  color: #0095d9;
 }
 
 a:hover {
