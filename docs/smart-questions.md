@@ -10,7 +10,7 @@ Rick Moen, < [respond-auto@linuxmafia.com](respond-auto@linuxmafia.com) >
 
 翻译：柯非, < <zer4tul@gmail.com> >
 
->这篇译文基于2014.05.21更新的[原文](http://www.catb.org/~esr/faqs/smart-questions.html)修订版3.10。
+>这篇译文基于2014.05.21更新的[原文](http://www.catb.org/~esr/faqs/smart-questions.html)修订版3.10。如果对译文有任何意见或者建议，请[给我发邮件](mailto:zer4tul@gmail.com)。
 
 >特别感谢[王刚](yafrank@126.com)，此前本文的翻译是由他进行的。
 
