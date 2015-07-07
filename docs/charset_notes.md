@@ -3,6 +3,24 @@ title: "字符集笔记"
 layout: document
 ---
 
+## 目录
+  * [字符集、字符编码](#%E5%AD%97%E7%AC%A6%E9%9B%86%E5%AD%97%E7%AC%A6%E7%BC%96%E7%A0%81)
+    * [常见的字符集及编码](#%E5%B8%B8%E8%A7%81%E7%9A%84%E5%AD%97%E7%AC%A6%E9%9B%86%E5%8F%8A%E7%BC%96%E7%A0%81)
+      * [ASCII 字符集和编码](#ascii-%E5%AD%97%E7%AC%A6%E9%9B%86%E5%92%8C%E7%BC%96%E7%A0%81)
+      * [ISO 8859](#iso-8859)
+      * [GB2312、GBK、GB13000、GB18030](#gb2312gbkgb13000gb18030)
+      * [Big5](#big5)
+      * [HZ](#hz)
+      * [Unicode、UCS 和 UTF](#unicodeucs-%E5%92%8C-utf)
+        * [Unicode 和 UCS](#unicode-%E5%92%8C-ucs)
+        * [Unicode 转换格式](#unicode-%E8%BD%AC%E6%8D%A2%E6%A0%BC%E5%BC%8F)
+          * [UTF-8](#utf-8)
+    * [其他](#%E5%85%B6%E4%BB%96)
+  * [识别字符集](#%E8%AF%86%E5%88%AB%E5%AD%97%E7%AC%A6%E9%9B%86)
+    * [HTML / XHTML / XML](#html--xhtml--xml)
+    * [关系型数据库（RDBMS）](#%E5%85%B3%E7%B3%BB%E5%9E%8B%E6%95%B0%E6%8D%AE%E5%BA%93rdbms)
+  * [REFERENCE](#reference)
+
 字符集和字符集编码其实并不难懂，但是很多人在这上面被坑（尤其是使用中文或者其他非 ASCII 语言的人）。本文就是想要简单的讲述字符编码相关的内容，但是并不会涉及到特别深入的原理。
 
 > 字符集设定正确，没有对应的字体所造成的看到“������”或“□□□□”的情况不在本文讨论的范围内。
