@@ -34,7 +34,7 @@ audio, canvas, video {
 
 /* 要注意表单元素并不继承父级 font 的问题 */
 body, button, input, select, textarea {
-  font: 400 1em/1.8 Lantinghei SC, Microsoft Yahei, Hiragino Sans GB, Microsoft Sans Serif, WenQuanYi Micro Hei, sans-serif;
+  font: 300 1em/1.8 PingFang SC, Lantinghei SC, Microsoft Yahei, Hiragino Sans GB, Microsoft Sans Serif, WenQuanYi Micro Hei, sans;
 }
 
 button::-moz-focus-inner,
@@ -58,8 +58,7 @@ fieldset, img {
 blockquote {
   position: relative;
   color: #999;
-  font-weight: 300;
-  font-family: Lantinghei SC, 'Helvetica Neue', 'Microsoft Yahei', 'Hiragino Sans GB', 'Microsoft Sans Serif', 'WenQuanYi Micro Hei', sans-serif;
+  font-weight: 400;
   border-left: 1px solid #1abc9c;
   padding-left: 1em;
   margin: 1em 3em 1em 2em;
@@ -127,7 +126,6 @@ sub {
 
 /* 让链接在 hover 状态下显示下划线 */
 a {
-  /*color: #1abc9c;*/
   color: #0095d9;
 }
 
@@ -135,9 +133,9 @@ a:hover {
   text-decoration: underline;
 }
 
-.typo a {
-  border-bottom: 1px solid #1abc9c;
-}
+/*.typo a {
+  border-bottom: 1px solid #0095d9;
+}*/
 
 .typo a:hover {
   border-bottom-color: #555;
@@ -154,7 +152,7 @@ ins, a {
  * 要做到更好，向后兼容的话，添加 class="typo-u" 来显示专名号
  * 关于 <u> 标签：http://www.whatwg.org/specs/web-apps/current-work/multipage/text-level-semantics.html#the-u-element
  * 被放弃的是 4，之前一直搞错 http://www.w3.org/TR/html401/appendix/changes.html#idx-deprecated
- * 一篇关于 <u> 标签的很好文章：http://html5doctor.com/u-element/ 
+ * 一篇关于 <u> 标签的很好文章：http://html5doctor.com/u-element/
  */
 u, .typo-u {
   text-decoration: underline;
@@ -242,7 +240,7 @@ strong, b {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: Verdana, 'Helvetica Neue', 'Microsoft Yahei', 'Hiragino Sans GB', 'Microsoft Sans Serif', 'WenQuanYi Micro Hei', sans-serif;
+  font-family: PingFang SC, Verdana, Helvetica Neue, Microsoft Yahei, Hiragino Sans GB, Microsoft Sans Serif, WenQuanYi Micro Hei, sans-serif;
   font-weight: 100;
   color: #000;
   line-height: 1.35;
