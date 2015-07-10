@@ -15,7 +15,7 @@ Mozilla 的计划具体包括两个方面：
 
 ## Let's Encrypt
 
-2014年11月18日，Mozilla、思科、Akamai、IdenTrust、电子前哨基金会（EFF）和密歇根大学研究人员联合成立的 Internet Security Research Group（“ISRG”） [宣布](https://letsencrypt.org/2014/11/18/announcing-lets-encrypt.html)了 [Let's Encrypt CA][Let's Encrypt] 项目，该项目计划在2015年5月中旬正式发布。
+2014年11月18日，Mozilla、思科、Akamai、IdenTrust、电子前哨基金会（EFF）和密歇根大学研究人员联合成立的 Internet Security Research Group（“ISRG”） [宣布](https://letsencrypt.org/2014/11/18/announcing-lets-encrypt.html)了 [Let's Encrypt CA][Let's Encrypt] 项目，该项目计划在2015年9月正式发布。
 
 [Let's Encrypt][Let's Encrypt] 的核心目标如下：
 
