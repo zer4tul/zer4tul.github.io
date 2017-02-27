@@ -17,5 +17,4 @@ node_modules/
 bower_components/
 components/
 
-Gemfile
 Gemfile.lock
