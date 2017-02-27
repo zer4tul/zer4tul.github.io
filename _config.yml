@@ -28,5 +28,3 @@ github:
   repo:           https://github.com/zer4tul
 production_url : http://idarkside.org
 disqus_shortname: the-dark-side
-
-theme: jekyll-theme-tactile
