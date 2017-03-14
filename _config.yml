@@ -30,5 +30,5 @@ version:          1.0.0
 
 github:
   repo:           https://github.com/zer4tul
-production_url : http://www.0x08.org
+production_url : https://www.0x08.org
 disqus_shortname: the-dark-side
