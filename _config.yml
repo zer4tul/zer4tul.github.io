@@ -9,7 +9,7 @@ permalink: /posts/:title
 title :           Dark Side
 tagline:          'cat /dev/brain'
 description:      'Dark Side'
-url:              http://idarkside.org
+url:              https://www.0x08.org
 baseurl:          '/'
 paginate:         5
 
