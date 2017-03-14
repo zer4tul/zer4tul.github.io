@@ -21,6 +21,10 @@ author :
   github : zer4tul
   twitter : zer4tul
 
+# plugins
+gems:
+  - jekyll-sitemap
+
 # Custom vars
 version:          1.0.0
 
