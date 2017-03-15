@@ -9,7 +9,7 @@ permalink: /posts/:title
 title :           Dark Side
 tagline:          'cat /dev/brain'
 description:      'Dark Side'
-url:              http://idarkside.org
+url:              http://www.0x08.org
 baseurl:          '/'
 paginate:         5
 
@@ -21,10 +21,14 @@ author :
   github : zer4tul
   twitter : zer4tul
 
+# plugins
+gems:
+  - jekyll-sitemap
+
 # Custom vars
 version:          1.0.0
 
 github:
   repo:           https://github.com/zer4tul
-production_url : http://idarkside.org
+production_url : http://www.0x08.org
 disqus_shortname: the-dark-side
