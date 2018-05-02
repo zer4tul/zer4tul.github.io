@@ -8,10 +8,10 @@ title : Atom Feed
 <link rel="hub" href="https://pubsubhubbub.appspot.com"/>
 
   <title type="text" xml:lang="en">{{ site.name }}</title>
-    <link type="application/atom+xml" href="{{ site.baseurl }}/atom.xml" rel="self"/>
-    <link href="{{ site.baseurl }}/"/>
+    <link type="application/atom+xml" href="{{ "/" | relative_url }}/atom.xml" rel="self"/>
+    <link href="{{ "/" | relative_url }}/"/>
   <updated>{{ site.time | date: "%Y-%m-%dT%H:%M:%SZ" }}</updated>
-  <id>{{ site.baseurl }}/</id>
+  <id>{{ "/" | relative_url }}/</id>
   <author>
     <name>{{ site.author.name }}</name>
     <email>{{ site.author.email }}</email>
@@ -20,10 +20,10 @@ title : Atom Feed
   {% for post in site.posts limit:10 %}
   <entry>
     <title>{{ post.title | xml_escape }}</title>
-    <link rel="alternate" type="text/html" href="{{ site.baseurl }}{{ post.url }}/?utm_source=RSS&amp;utm_medium=RSS&amp;utm_campaign={{ post.title | replace: ',','' | replace: ' ', '' | xml_escape }}" />
+    <link rel="alternate" type="text/html" href="{{ "/" | relative_url }}{{ post.url }}/?utm_source=RSS&amp;utm_medium=RSS&amp;utm_campaign={{ post.title | replace: ',','' | replace: ' ', '' | xml_escape }}" />
     <published>{{ post.date | date: "%Y-%m-%dT%H:%M:%SZ" }}</published>
     <updated>{{ post.date | date_to_xmlschema }}</updated>
-    <id>{{ site.baseurl }}{{ post.id }}</id>
+    <id>{{ "/" | relative_url }}{{ post.id }}</id>
     <content type="html"><![CDATA[ {{ post.content }} ]]></content>
   </entry>
   {% endfor %}
