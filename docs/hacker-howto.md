@@ -1,8 +1,3 @@
----
-layout: document
-title: 如何成为黑客
----
-
 # 如何成为黑客
 
 How To Become A Hacker
@@ -13,7 +8,7 @@ Copyright © 2001 Eric S. Raymond
 
 翻译：柯非, < <zer4tul@gmail.com> >
 
-这篇译文基于2017.10.06更新的[原文][hacker-howto]修订版1.50。
+这篇译文基于2017.10.06更新的[原文][hacker-howto]修订版1.51。
 
 如果对译文有任何意见或者建议，__请[发Issue](https://github.com/zer4tul/hacker-howto/issues/new)，或直接[发Pull Request](https://github.com/zer4tul/hacker-howto/compare/)给我。__
 
@@ -31,7 +26,7 @@ Copyright © 2001 Eric S. Raymond
   - [2. 获取一个开源的Unix并学习运行和使用它](#skill2)
   - [3. 学习使用万维网（World Wide Web，WWW）和HTML（超文本标记语言）](#skill3)
   - [4. 学习实用英语](#skill4)
-- [黑客社区的身份](#黑客社区的身份)
+- [在黑客社区中立足](#在黑客社区中立足)
   - [1. 编写开源软件](#respect1)
   - [2. 帮助测试和调试开源软件](#respect2)
   - [3. 发布有用的信息](#respect3)
@@ -61,7 +56,7 @@ Copyright © 2001 Eric S. Raymond
 
 <p style="text-align:center;"> <img  src="http://www.catb.org/~esr/faqs/glider.png"> </p>
 
-## 什么是黑客？
+## 什么是黑客
 
 [新黑客词典（Jargon File）][Jargon File]中有数个“黑客”的定义，主要形容"技术专才"或"有志解决问题及超越极限之人"。要成为黑客，有两个要点。
 
@@ -242,7 +237,7 @@ Unix是互联网上的操作系统。虽然你不懂Unix仍然可以学会使用
 
 <p style="text-align:center;"> <img  src="http://www.catb.org/~esr/faqs/glider.png"> </p>
 
-## Status in the Hacker Culture
+## 在黑客社区中立足
 
 1. [编写开源软件](#respect1)
 2. [帮助测试和调试开源软件](#respect2)
