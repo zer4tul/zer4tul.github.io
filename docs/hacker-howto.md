@@ -593,3 +593,4 @@ A: 如果你的机器上还没有安装Unix，我在本文的其他地方已经�
 [hardware howto]: http://en.tldp.org/HOWTO/Hardware-HOWTO/index.html
 [Open Source]: http://www.opensource.org/
 [How To Learn Hacking]: http://catb.org/~esr/faqs/hacking-howto.html
+
