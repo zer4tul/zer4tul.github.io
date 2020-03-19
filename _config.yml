@@ -22,7 +22,7 @@ author :
   twitter : zer4tul
 
 # plugins
-gems:
+plugins:
   - jekyll-sitemap
 
 # Custom vars
