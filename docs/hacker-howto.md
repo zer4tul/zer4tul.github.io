@@ -9,7 +9,7 @@ Copyright © 2001 Eric S. Raymond
 
 翻译：柯非, < <zer4tul@gmail.com> >
 
-这篇译文基于2017.10.06更新的[原文][hacker-howto]修订版1.51。
+这篇译文基于2020.01.03更新的[原文][hacker-howto]修订版1.52。
 
 如果对译文有任何意见或者建议，__请[发Issue](https://github.com/zer4tul/hacker-howto/issues/new)，或直接[发Pull Request](https://github.com/zer4tul/hacker-howto/compare/)给我。__
 
@@ -53,7 +53,7 @@ Copyright © 2001 Eric S. Raymond
 
 本文里九宫格中的5个黑点的装饰图被称作glider。这是一个使很多黑客多年痴迷的被称作[康威生命游戏（LIFE）][life]中，具有令人惊奇特性的简单图案。我认为它是很好的黑客精神徽章 —— 抽象，初见的时候感觉有点神秘，通过它复杂的逻辑可以通向整个世界。如果你想了解更多关于glider的信息，请看[这里][glider]。
 
-如果你觉得这篇文章有价值，请[在Gittip上给我一点赞助][gittip]。也请考虑赞助其他为你提供了有价值代码的黑客。小额的赞助也能够聚小流成江海，使为你提供帮助的人从繁重的劳动中解放出来，创造更多的价值。
+如果你觉得这篇文章有价值，请在[Patreon][Patreon]或者[SubscribeStar][SubscribeStar]上给我一点赞助。也请考虑通过[Loadsharers][Loadsharers]赞助其他为你提供了有价值代码的黑客。小额的赞助也能够聚小流成江海，使为你提供帮助的人从繁重的劳动中解放出来，创造更多的价值。
 
 <p style="text-align:center;"> <img  src="http://www.catb.org/~esr/faqs/glider.png"> </p>
 
@@ -164,6 +164,8 @@ Copyright © 2001 Eric S. Raymond
 
 我早前曾经建议使用Java作为入门语言，但[这篇评价][critique of java]改变了我的看法（请在文档中搜索“The Pitfalls of Java as a First Programming Language”）。如同文中尖锐指出的一样，一个黑客不能“像五金店中的管道工一样处理问题”。你需要知道所有的组件事实上都 **干了什么**。现在，我认为最好先学C和Lisp，然后再学Java。
 
+比Java更好的选择是学习Go。这种相对较新的语言很容易从Python上手，而且学习它可以使你在可能的下一步（学习C语言）中得到很大的帮助。此外，未来几年的一个未知数是Go将在多大程度上取代C语言成为真正的系统编程语言。在未来，这种情况可能会在C语言的大部分传统领域内发生。
+
 另外有一点需要注意。如果一门语言帮你做了太多工作，它会同时是一个好的生产工具和一个不好的初学对象。不仅语言有这个问题，Web框架比如RubyOnRails，CakePHP，Django也很容易让你流于表面，面对困难问题的时候束手无策，甚至无法对一个简单问题进行追查并给出解决方案。
 
 如果你需要做一些重要的编程工作，你需要学习C语言，它是Unix的核心语言。C++跟C关系密切。如果你了解其中一种，学习另外一种应该不难。但是这两种语言都不适合作为入门学习。此外，如果你越避免用C编程，你的工作效率会越高。
@@ -172,13 +174,13 @@ C的执行效率非常高，并且非常节省机器资源。不幸的是C的高
 
 其他对黑客而言比较重要的语言包括Perl和LISP。Perl很实用，它广泛应用于动态网页和系统管理方面，因此即使你从不写Perl代码，至少也得能看懂。许多人使用Perl的理由和我建议你使用Python的理由一样，都是为了避免用C完成那些执行效率需求不那么高的工作。你需要能够看懂他们的代码。
 
-LISP之所以值得一学是基于另外的理由——当你最终掌握了它的时候，你将会获得巨大的启迪。它将使你成在今后为一个更好的程序员，即使你实际上很少使用LISP本身。（你可以通过为Emacs文本编辑器或者GIMP的Script-Fu编写插件或修改现有插件来很容易的学习LISP。）
+LISP之所以值得一学是基于另外的理由——当你最终掌握了它的时候，你将会获得巨大的启迪。它将使你在今后成为一个更好的程序员，即使你实际上很少使用LISP本身。（你可以通过为Emacs文本编辑器或者GIMP的Script-Fu编写插件或修改现有插件来很容易的学习LISP。）
 
 当然，你最好五种语言都会（Python，C/C++，Java，Perl和LISP）。除了是重要的黑客语言之外，它们也代表了截然不同的编程思路和方法，每一种都能让你受益匪浅。
 
 但是单纯的堆砌语言是不可能成为一个黑客，甚至程序员的。你需要学会如何独立于任何具体的语言之外来思考编程问题。作为一名真正的黑客，你需要通过手册和你已有的知识掌握到在几天之内学会一门语言的要点。这意味着你需要学习许许多多不同的语言。
 
-这里我无法给你完完全全的指导教会你如何编程——这是个复杂的技能。但我可以告诉你，书本和课程也不能做到（最好的黑客中，有许多，也许 **几乎** 都是自学成材的）。 你可以从书本上学到语言的特点——这只是皮毛，但要使书面知识成为自身技能只能通过实践和虚心向他人学习。因此要做到（1）**读** 代码及（2）**写** 代码。
+这里我无法给你完完全全的指导教会你如何编程——这是个复杂的技能。但我可以告诉你，书本和课程也不能做到（最好的黑客中，有许多，也许 **几乎** 都是自学成才的）。 你可以从书本上学到语言的特点——这只是皮毛，但要使书面知识成为自身技能只能通过实践和虚心向他人学习。因此要做到（1）**读** 代码及（2）**写** 代码。
 
 Peter Norvig，Google最顶级的黑客之一，也是世界上最受欢迎的AI教材（译注：指“人工智能：一种现代方法”和“人工智能程序设计范例：通用Lisp语言的案例研究”等）的共同作者。他写了一篇名为[Teach Yourself Programming in Ten Years][Teach Yourself Programming in Ten Years]的短文。他在文中提到的“编程成功的诀窍（recipe for programming success）”特别值得留意。
 
@@ -330,7 +332,7 @@ Unix是互联网上的操作系统。虽然你不懂Unix仍然可以学会使用
 
 不要卷入Usenet（或其他任何地方）的骂战。
 
-不要自称为“数字朋克（cyberpunk）”，也不要浪费时间跟他们打交道。
+不要自称为“赛博朋克（cyberpunk）”，也不要浪费时间跟他们打交道。
 
 不要发送含有大量拼写和语法错误的email和帖子。
 
@@ -342,11 +344,11 @@ Unix是互联网上的操作系统。虽然你不懂Unix仍然可以学会使用
 
 ## 历史记录：黑客活动，开源，和自由软件
 
-当我在1996年末刚开始写这篇文档的时候，很多情况跟现在是不同的。简单的介绍一下这个变化对于对开放源代码、自由软件和Linux跟黑客社区的关系感到困惑的人们可会有所帮助。如果你对这些不感兴趣，可以直接跳过这里，前往FAQ和参考资料部分。
+当我在1996年末刚开始写这篇文档的时候，很多情况跟现在是不同的。简单的介绍一下这个变化对于对开放源代码、自由软件和Linux跟黑客社区的关系感到困惑的人们可能会有所帮助。如果你对这些不感兴趣，可以直接跳过这里，前往FAQ和参考资料部分。
 
 我描述的黑客精神和黑客社区远早于1990年出现的Linux。我最初进入这个圈子大概是在1976年，其原因可以追溯到1960年代早期。但是在Linux出现前，多数黑客行为是在专有操作系统，或一些自主研发的实验性系统上，例如MIT的ITS，这个系统从未在实验室以外的地方使用过。虽然在早期（Linux出现之前）有过一些试图改变这种状况的努力，但是它们的影响都非常轻微，仅限于真正怀抱这样理想的人群，即使在当时的黑客社区这也是绝对少数，更不论对于世界范围内的通用软件群体的影响了。
 
-现在被称为“开放源代码”的行为，其历史与黑客社区一样久远，但是直到1985年这都只是一个无名的民间行为，没有相关的理论和宣言。这段史前时代在1985年结束，大黑客Richard Stallman（“RMS”）尝试给了它一个名字——“自由软件（Free Software）”。但是这个命名行为也是一个强制要求行为，他为“自由软件”标签加上了大多数已有的黑客社区从不接受的意识形态的包袱。“自由软件”的标签被黑客社区中的一部分重要人物（尤其是与BSD Un    ix有关联的社区）明确拒绝，并且其余的大部分人也在严肃并且持保留意见的情况下使用它（包括我本人）。
+现在被称为“开放源代码”的行为，其历史与黑客社区一样久远，但是直到1985年这都只是一个无名的民间行为，没有相关的理论和宣言。这段史前时代在1985年结束，大黑客Richard Stallman（“RMS”）尝试给了它一个名字——“自由软件（Free Software）”。但是这个命名行为也是一个强制要求行为，他为“自由软件”标签加上了大多数已有的黑客社区从不接受的意识形态的包袱。“自由软件”的标签被黑客社区中的一部分重要人物（尤其是与BSD Unix有关联的社区）明确拒绝，并且其余的大部分人也在严肃并且持保留意见的情况下使用它（包括我本人）。
 
 除此之外，大约在1990年代中期以前，RMS想要在“自由软件”口号下定义和引领黑客社区。在Linux崛起之后，这受到了极大挑战。Linux为开放源代码开发活动提供了一个天然的环境。许多在现今被称为“开放源代码”条款下发布的项目纷纷从专有Unix向Linux迁移。围绕Linux的社区呈现爆炸式的增长，比在Linux出现前的黑客文化规模更大且更多样化。RMS想要将这些活动与他的“自由软件”运动关联起来，但是由于Linux社区爆炸式的多样性和该社区的创始人，Linus Torvalds的公开怀疑所阻碍。Torvalds仍然使用“自由软件”这一词汇，因为找不到更好的替代品，但他公开拒绝了RMS的意识形态观念。许多年轻黑客纷纷效仿。
 
@@ -502,7 +504,7 @@ A: 我维护着一份[Linux Reading List HOWTO][Linux Reading List HOWTO]，也�
 
 Q: <a name="mathematics">成为一名黑客我需要擅长数学吗？</a>
 
-A: 不。黑客道很少使用常规的数学或算术。
+A: 不。黑客倒很少使用常规的数学或算术。
 尤其是你不会用到三角学、微积分或数学分析（在特定领域，这些学科很有用，例如3D电脑图像）。一些有限数学（包括布尔代数，集合论，组合数学，图论）的背景知识会有帮助。了解一些系统的逻辑和布尔代数是有好处的。一些基础的离散数学（包括有限集合论、组合数学和图论）会有帮助。
 
 更重要的是：你需要能够像数学家一样进行逻辑性地思考和进行缜密的推理。在这一点上绝大部分数学理论帮不了你，你需要有能够应付数学的修养和智力。如果你不够聪明，你成为黑客的希望很渺茫。如果你的修养不够，最好培养起来。
@@ -541,7 +543,7 @@ A: 看起来不太可能——目前为止，开放源代码软件产业似乎�
 
 Q: <a name="problems">哪里有免费的Unix？</a>
 
-A: 如果你的机器上还没有安装Unix，我在本文的其他地方已经指出了从哪里可以获取到常用的免费Unix。在本份文档的某个地方我已经提到过何处可以得到最常用的免费Unix。作为一名黑客，你需要自立自强，以及自学能力。现在开始吧……
+A: 如果你的机器上还没有安装Unix，我在本文的其他地方已经指出了从哪里可以获取到常用的免费Unix。作为一名黑客，你需要自立自强，以及自学能力。现在开始吧……
 
 [gilder]: http://www.catb.org/~esr/faqs/glider.png
 [Jargon File]: http://www.catb.org/jargon
@@ -566,7 +568,9 @@ A: 如果你的机器上还没有安装Unix，我在本文的其他地方已经�
 [Swedish]: http://www1.tripnet.se/~mly/open/faqs/hacker-howto.se.html
 [life]: http://dmoz.org/Computers/Artificial_Life/Cellular_Automata/
 [glider]: http://www.catb.org/~esr/hacker-emblem/
-[gittip]: http://gittip.com/esr
+[Patreon]:http://patreon.com/esr
+[SubscribeStar]:https://www.subscribestar.com/esr
+[Loadsharers]:http://www.catb.org/esr/loadsharers/
 [alt.2600]: news:alt.2600
 [evaluation of Python]: http://www.linuxjournal.com/article/3882
 [tutorials]: http://docs.python.org/tutorial/index.html
@@ -574,7 +578,7 @@ A: 如果你的机器上还没有安装Unix，我在本文的其他地方已经�
 [critique of java]: http://www.crosstalkonline.org/storage/issue-archives/2008/200801/200801-Dewar.pdf
 [Teach Yourself Programming in Ten Years]: http://www.norvig.com/21-days.html
 [Loginataka]: http://catb.org/~esr/faqs/loginataka.html
-[http://catb.org/~esr/writings/taoup/]: http://catb.org/~esr/writings/taoup/
+[The Art Of Unix Programming]: http://catb.org/~esr/writings/taoup/
 [Linux Online!]: http://www.linux.org/
 [Ubuntu]: http://www.ubuntu.com/
 [basics of Unix and the Internet]: http://en.tldp.org/HOWTO/Unix-and-Internet-Fundamentals-HOWTO/index.html
